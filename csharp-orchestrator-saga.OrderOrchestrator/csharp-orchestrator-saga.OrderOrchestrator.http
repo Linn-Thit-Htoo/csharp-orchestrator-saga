@@ -1,0 +1,6 @@
+@csharp_orchestrator_saga.OrderOrchestrator_HostAddress = http://localhost:5062
+
+GET {{csharp_orchestrator_saga.OrderOrchestrator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,19 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7134"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/gateway/Order/{everything}",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7061
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Order/{everything}",
+      "DownstreamScheme": "https"
+    }
+  ]
+}
